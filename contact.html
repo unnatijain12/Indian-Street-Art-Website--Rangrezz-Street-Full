@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <title>Contact & Submit Art</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/contact.css">
 
 
@@ -56,16 +56,16 @@
 <!-- LEFT: FORM -->
 <div class="form-section">
 
-<form id="contactForm">
+<form id="contactForm" enctype="multipart/form-data">
 
 <label>Your Name</label>
-<input type="text" placeholder="Enter your full name" required>
+<input type="text" name="name" placeholder="Enter your full name" required>
 
 <label>Email Address</label>
-<input type="email" placeholder="your@email.com" required>
+<input type="email" name="email" placeholder="your@email.com" required>
 
 <label>Subject</label>
-<select required>
+<select name="subject" required>
 <option value="">Select a subject...</option>
 <option>General Enquiry</option>
 <option>Submit Artwork for Gallery</option>
@@ -76,10 +76,10 @@
 </select>
 
 <label>Your Message</label>
-<textarea placeholder="Tell us about yourself, your artwork, or what you would like to say..." required></textarea>
+<textarea name="message" placeholder="Tell us about yourself, your artwork, or what you would like to say..." required></textarea>
 
 <label>Upload Artwork (Optional)</label>
-<input type="file" accept=".jpg,.jpeg,.png">
+<input type="file" name="artwork" accept=".jpg,.jpeg,.png">
 <p class="file-note">JPG or PNG only. Maximum file size 5MB.</p>
 
 <button type="submit" class="submit-btn">SEND MESSAGE</button>
