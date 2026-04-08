@@ -1,0 +1,79 @@
+
+
+.cities-intro {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.city-image {
+    width: 100%;          
+    overflow: hidden;  
+}
+
+.city-image img {
+    width: 100%;      
+    height: 100%;     
+    object-fit: cover; 
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.tab-btn {
+    background-color: #1A1A1A;
+    color: #F5F5F5;
+    border: 1px solid #00F5FF;
+    padding: 10px 20px;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #FF007F;
+    border-color: #FF007F;
+}
+
+.tab-btn.active {
+    background-color: #FF007F;
+    border-color: #FF007F;
+}
+
+.tab-content {
+    display: none;
+    background-color: #1A1A1A;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tab-content h3,
+.tab-content h4 {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 20px;
+}
+
+.tab-content p,
+.tab-content ul {
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+
+.tab-content ul {
+    padding-left: 20px;
+}

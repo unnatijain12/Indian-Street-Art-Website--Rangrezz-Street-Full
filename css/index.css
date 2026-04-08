@@ -1,0 +1,147 @@
+/* HERO */
+
+.hero {
+    background-image: url("../images/home/hero.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #FF007F;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+/* Call to action */
+.cta {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.cta .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background: #00F5FF;
+    color: #222;
+}
+.btn-primary:hover {
+    background: #00cfcf;
+}
+.btn-secondary {
+    background: #FFAC1C;
+    color: #fff;
+}
+.btn-secondary:hover {
+    background: #e69500;
+}
+
+/* INTRO STRIP */
+
+.intro-strip {
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #1A1A1A;
+    flex-wrap: wrap;
+}
+
+.intro-box {
+    width: 300px;
+    margin: 20px;
+}
+
+/* CARDS */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.artist-card,
+.city-card {
+    background-color: #1A1A1A;
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+}
+.artist-image-container {
+    width: 100%;      
+    height: 300px;     
+    overflow: hidden;  
+}
+
+.artist-image-container img {
+    width: 100%;      
+    height: 100%;     
+    object-fit: cover; 
+}
+
+.tag {
+    color: #FFAC1C;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+.style {
+    color: #00F5FF;
+    font-family: 'Oswald', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 80px;
+}
+
+.section-button {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* QUOTE */
+
+.quote-section {
+    background-color: #1A1A1A;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.quote {
+    font-size: 24px;
+}
+
+.quote-author {
+    color: #FFAC1C;
+    font-family: 'Oswald', sans-serif;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .mission-cards, .info-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

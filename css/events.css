@@ -1,0 +1,50 @@
+.filters{
+text-align:center;
+padding:20px;
+}
+
+.filter-btn{
+background:none;
+border:2px solid #00F5FF;
+color:#00F5FF;
+padding:10px 20px;
+margin:5px;
+cursor:pointer;
+font-family:'Oswald',sans-serif;
+}
+
+.filter-btn.active,
+.filter-btn:hover{
+background:#FF007F;
+border-color:#FF007F;
+color:#fff;
+}
+
+.events-container{
+display:grid;
+gap:30px;
+padding:40px 10%;
+}
+
+.event-card{
+background:#1A1A1A;
+padding:30px;
+border-left:5px solid #00F5FF;
+transition:0.4s;
+}
+
+.event-card:hover{
+transform:translateY(-8px);
+border-left:5px solid #FF007F;
+}
+
+.badge{
+padding:5px 10px;
+font-size:12px;
+font-family:'Oswald';
+}
+
+.upcoming{
+background:#00cc66;
+color:#000;
+}

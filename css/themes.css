@@ -1,0 +1,60 @@
+/* THEMES */
+.themes-container {
+    padding: 0 10% 80px 10%;
+    display: grid;
+    gap: 40px;
+}
+
+.theme-card {
+    background-color: #1A1A1A;
+    padding: 40px;
+    border-left: 5px solid #00F5FF;
+    transition: 0.4s ease;
+    position: relative;
+}
+
+.theme-card:hover {
+    transform: translateY(-8px);
+    border-left: 5px solid #FF007F;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+}
+
+.theme-card h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    color: #FFAC1C;
+    margin-bottom: 20px;
+}
+
+.theme-card p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #F5F5F5;
+    margin-bottom: 15px;
+}
+
+body {
+    margin: 0;
+    background-color: #0A0A0A;
+    color: #F5F5F5;
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+/* Intro */
+.intro {
+    padding: 60px 15%;
+}
+
+.intro h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+    color: #FFAC1C;
+}
+
+.intro p {
+    line-height: 1.9;
+    margin-bottom: 20px;
+}

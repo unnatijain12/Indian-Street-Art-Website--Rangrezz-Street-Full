@@ -1,0 +1,87 @@
+/* ===============================
+   ARTISTS PAGE
+==================================*/
+
+.artists-intro {
+    text-align: center;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
+.artists-section {
+    padding: 60px 0;
+}
+
+.artist-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 80px;
+    background-color: #1A1A1A;
+    padding: 30px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    border: 1px solid #FF007F;
+}
+
+.artist-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.artist-content {
+    flex: 1;
+}
+
+.artist-content h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 40px;
+}
+
+.city-tag {
+    display: inline-block;
+    background-color: #FFAC1C;
+    color: #0A0A0A;
+    padding: 4px 10px;
+    margin: 10px 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+
+.style-tags span {
+    display: inline-block;
+    background-color: #0A0A0A;
+    border: 1px solid #00F5FF;
+    padding: 4px 10px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 13px;
+}
+
+.artist-content p {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    margin: 20px 0;
+}
+
+.artist-content h4 {
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 10px;
+}
+
+.artist-content ul {
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+}
+
+.artist-content ul li {
+    margin-bottom: 8px;
+}

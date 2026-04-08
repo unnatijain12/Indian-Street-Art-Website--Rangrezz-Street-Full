@@ -1,0 +1,105 @@
+.contact-container{
+display:grid;
+grid-template-columns:1.2fr 0.8fr;
+gap:40px;
+padding:40px 10%;
+}
+
+/* FORM */
+form{
+display:flex;
+flex-direction:column;
+}
+
+label{
+font-family:'Oswald',sans-serif;
+margin-top:20px;
+margin-bottom:5px;
+color:#00F5FF;
+}
+
+input, select, textarea{
+padding:12px;
+background:#1A1A1A;
+border:1px solid #333;
+color:#F5F5F5;
+font-family:'Inter';
+}
+
+textarea{
+min-height:120px;
+resize:vertical;
+}
+
+input:focus, select:focus, textarea:focus{
+outline:none;
+border:1px solid #FF007F;
+}
+
+.file-note{
+font-size:12px;
+color:#aaa;
+margin-top:5px;
+}
+
+.submit-btn{
+margin-top:30px;
+padding:15px;
+background:#FF007F;
+border:none;
+color:white;
+font-family:'Oswald',sans-serif;
+cursor:pointer;
+transition:0.3s;
+}
+
+.submit-btn:hover{
+background:#00F5FF;
+color:#000;
+}
+
+/* INFO CARDS */
+.contact-info-card{
+background:#1A1A1A;
+padding:25px;
+margin-bottom:25px;
+border-left:4px solid #FFAC1C;
+}
+
+.contact-info-card h3{
+font-family:'Oswald';
+margin-bottom:15px;
+}
+
+.contact-info-card .main{
+color:#FF007F;
+font-weight:500;
+}
+
+.contact-info-card .sub{
+font-size:14px;
+color:#ccc;
+}
+
+.contact-info-card ul{
+padding-left:20px;
+}
+
+/* CONTACT RESPONSIVE FIX */
+@media (max-width: 768px) {
+
+    .contact-container {
+        grid-template-columns: 1fr; /* stack into 1 column */
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .contact-info-card {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
+
+}
