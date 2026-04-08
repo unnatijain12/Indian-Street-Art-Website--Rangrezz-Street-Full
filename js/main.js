@@ -165,14 +165,34 @@ filterButtons.forEach(btn => {
     });
 });
 
-// Simple form validation + fake success message
+// ===============================
+// CONTACT FORM — sends to backend
+// ===============================
 
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", function(e){
-e.preventDefault();
+if (form) {
+    form.addEventListener("submit", async function(e) {
+        e.preventDefault();
 
-alert("Thank you for your message! We will respond within 48 hours.");
+        const formData = new FormData(form);
 
-form.reset();
-});
+        try {
+            const res = await fetch('http://localhost:5000/api/contact', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await res.json();
+
+            if (data.success) {
+                alert("Thank you for your message! We will respond within 48 hours.");
+                form.reset();
+            } else {
+                alert("Error: " + data.error);
+            }
+        } catch (err) {
+            alert("Could not connect to server. Please try again later.");
+        }
+    });
+}
